@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/359992058_6481804341901417_839012256403764398_n.jpg?stp=dst-jpg_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=1IlaOYbAQGEAX8AtVRY&_nc_oc=AQlzSrkK5eN_uGIMm9f0qXfSebwDH1v2C-h28roVokapdQjThV92xcsUmC86P1QoGeS1kF4y0YCofTRfvnDhfGLK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdS1d35QarujJ0YpHMdmIideDX7tcFO2UQxET4fo-jRxkQ&oe=64D50AC4");
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+}   
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+.calculadora{
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: 75%;
+    width: 18rem;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+}
+.input {
+    grid-column: 1 / -1;
+    height: 2.5rem;
+    margin: .2rem;
+    width: 98%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: .5rem;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    font-family: monospace;
+    user-select: none;
+}
+.boton {
+    margin: 5px 5px 2px 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+}
+.color1 {
+    background-color: #1b62b9;
+}
+.color2 {
+    background-color: #a20112;
+}
+.boton:hover, .boton:active {
+    background-color: #252525;
+}
+.color1:hover, .color1:active {
+    background-color: #0053b8;
+}
+.color2:hover, .color2:active {
+    background-color: #88000e;
+}
+
